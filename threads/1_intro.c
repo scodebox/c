@@ -7,6 +7,7 @@
 void *fun()
 {
     printf("Start Thread!\n");
+    printf("process ID : %d\n",getpid());
     sleep(3);
     printf("End Thread!\n");
 }

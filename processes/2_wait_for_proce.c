@@ -13,7 +13,7 @@ int main()
         n = 6;
     // wait for the child process to finish.
     if (id != 0)
-        wait();
+        wait(NULL);
 
     for (int i = n; i < n + 5; i++)
     {

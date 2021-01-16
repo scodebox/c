@@ -18,7 +18,7 @@ int main(){
         }
     }else{
         sleep(3);
-        kill(id,SIGKILL);
+        kill(id,SIGKILL); // KILL
         wait(NULL);
     }
     return 0;

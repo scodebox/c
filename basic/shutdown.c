@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -10,6 +9,6 @@ int main()
     getch();
     
     printf("\n\nComputer will now shutdown !");*/
-    
+
     system("shutdown /s /t 60");
 }

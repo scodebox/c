@@ -28,6 +28,5 @@ int main()
        printf("\n%d", s1.x.mm);
        printf("\n%d", s1.x.yy);
 
-       getch();
        return 0;
 }

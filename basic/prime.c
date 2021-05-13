@@ -1,26 +1,33 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+
 int main()
 {
-	int n,i,flag;
+	int n, i, flag;
+
 	printf("Enter a number to check : ");
-	scanf("%d",&n);
-	for(i=2;i<=n/2;i++){
-		if(n%i==0){
-			flag=1;
+	scanf("%d", &n);
+
+	for (i = 2; i <= n / 2; i++)
+	{
+		if (n % i == 0)
+		{
+			flag = 1;
 			break;
-		}else{
-			flag=0;
-		}	
+		}
+		else
+		{
+			flag = 0;
+		}
 	}
-	if(flag==1){
+
+	if (flag == 1)
+	{
 		printf("Not prime");
-	}else{
+	}
+	else
+	{
 		printf("prime number");
 	}
 
-
-	getch();
 	return 0;
 }
-

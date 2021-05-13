@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 int main()
 {
     FILE *fp;
@@ -8,10 +8,10 @@ int main()
     int roll;
     float marks;
 
-    fp=fopen("d:\\123\\file.txt","w");
+    fp=fopen("file.txt","w");
 
     printf("Enter your name : ");
-    gets(name);
+    scanf("%s",name);
     fprintf(fp,"Name : %s",name);
 
     printf("Enter your roll : ");
@@ -23,7 +23,5 @@ int main()
     fprintf(fp,"\n Marks : %f",marks);
 
     fclose(fp);
-
-    getch();
     return 0;
 }
